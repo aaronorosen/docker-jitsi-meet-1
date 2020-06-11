@@ -50,6 +50,7 @@ RUN apt-get install software-properties-common -y
 RUN add-apt-repository ppa:nginx/stable -y
 RUN apt-get update && apt-get install nginx libnginx-mod-rtmp -y
 
+# https://dev.to/lax/rtmps-relay-with-stunnel-12d3
 RUN apt-get install stunnel4 -y
 
 EXPOSE 80 443
